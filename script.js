@@ -10,7 +10,7 @@ function giphyURLWithSearchTerm(searchTerm) {
 
 function appendImageToBody(srcURL) {
 
-    $('body').append('<img src=' + srcURL + '>');
+    $('body').append('<img src=' + srcURL + 'class= "api">');
 }
 
 function callGiphyAPIWithSearchTerm(searchTerm ) {
@@ -35,14 +35,17 @@ function imageclear(){
     $("img").hide();
 }
 
-var count = 0;
+function end(){
+    alert("You just release the Monster!");
+    window.close();
+}
+
+
 
 $("button").click(function(n){
     imageclear();
     var search = $("input").val();
     giphyURLWithSearchTerm(search);
     callGiphyAPIWithSearchTerm(search);
-    if(count ===1){
-       
-    }
+    setTimeout(end,480000)
 });

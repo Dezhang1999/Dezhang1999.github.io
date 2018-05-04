@@ -5,8 +5,8 @@ $("#Enter").click(function(){
 $("#leave").click(function(){
    window.close(); 
 });
-var timer = new Timer();
-timer.start();
-timer.addEventListener('secondsUpdated', function () {
-    $('#basicUsage').html(timer.getTimeValues().toString());
-});
+$("body").ready(function(){
+    $("Only Piano.mp3").play();
+})
+
+

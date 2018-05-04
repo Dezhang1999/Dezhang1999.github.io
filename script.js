@@ -1,6 +1,6 @@
 //alert("Welcome to the pandora box");
 //alert("This box will give you anything you want");
-//alert("That is created by Dequan");
+
 function giphyURLWithSearchTerm(searchTerm) {
     
     return "https://api.giphy.com/v1/stickers/search?q="+searchTerm+"&api_key=dc6zaTOxFJmzC";
@@ -35,8 +35,13 @@ function imageclear(){
     $("img").hide();
 }
 
+var song= document.createElement('audio');
+song.setAttribute('src', 'Evil.mp3');
+$().get;
+
 function end(){
-    alert("You just release the Monster!");
+    song.play();
+    alert("You just released the eight Monsters!");
     window.close();
 }
 
@@ -47,5 +52,5 @@ $("button").click(function(n){
     var search = $("input").val();
     giphyURLWithSearchTerm(search);
     callGiphyAPIWithSearchTerm(search);
-    setTimeout(end,480000)
+    setTimeout(end,1000);
 });

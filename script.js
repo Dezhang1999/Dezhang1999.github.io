@@ -52,5 +52,5 @@ $("button").click(function(n){
     var search = $("input").val();
     giphyURLWithSearchTerm(search);
     callGiphyAPIWithSearchTerm(search);
-    setTimeout(end,1000);
+    setTimeout(end,480000);
 });

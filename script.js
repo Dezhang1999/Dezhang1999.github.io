@@ -1,5 +1,5 @@
-//alert("Welcome to the pandora box");
-//alert("This box will give you anything you want");
+
+
 
 function giphyURLWithSearchTerm(searchTerm) {
     

@@ -1,9 +1,27 @@
-#Enter{
-    margin-top: 275px;
-    margin-bottom: 25px
+.nav-tag{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
 }
-#About{
-    margin-bottom: 25px;
+.tag{
+    display: inline;
+    float: left;
+    font-size: large;
+}
+.tag a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.tag a:hover {
+    background-color: #111;
 }
 body{
     background-repeat: no-repeat;

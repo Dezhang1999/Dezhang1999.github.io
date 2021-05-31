@@ -1,16 +1,41 @@
-p{
-    font-size: 20px
+.nav-tag{
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
 }
-img{
+.tag{
+    display: inline;
+    float: left;
+    font-size: large;
+}
+.tag a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+.tag a:hover {
+    background-color: #111;
+}
+
+#my_image{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    height: 100%;
+    width: 500px;
+    height: auto;
+    padding-top: 10px;
 }
-button{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-     background-color: white;
-    color: black;
-    border: 2px solid gray; /* Green */
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: "Times New Roman", Times, serif;
 }
